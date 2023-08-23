@@ -32,6 +32,7 @@
   <!-- Yocto/OpenEmbedded things. -->
   <project name="poky" path="external/poky" remote="yocto" revision="kirkstone" />
   <project name="openembedded/meta-openembedded" path="external/meta-openembedded" remote="github" revision="kirkstone" />
+  <project name="meta-lts-mixins" path="external/meta-lts-mixins_rust-1.68" remote="yocto" revision="kirkstone/rust-1.68" />
 
 
   <!-- UPSTREAM COMPONENTS -->
