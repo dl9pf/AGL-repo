@@ -65,7 +65,10 @@
   <project name="meta-flutter/workspace-automation" path="external/workspace-automation" remote="github" revision="1548ef193f55cf476af6189449ee876ba7a7fdaf" upstream="main"/>
 
   <!-- BSPs -->
+  <project name="dl9pf/meta-sifive" path="bsp/meta-sifive" remote="github" revision="80a979fd222623b56e44493cf92bd9e276a65453" upstream="master"/>
 
+
+  
   <!-- Renesas Gen3 specific things -->
   <project name="renesas-rcar/meta-renesas" path="bsp/meta-renesas" remote="github" revision="3a5cd5971edb07f0a17486e48062a1cb2f8a230f" upstream="kirkstone-dev"/>
   <project name="CogentEmbedded/meta-rcar" path="bsp/meta-rcar" remote="github" revision="511808a3e794ad0e35386f83d3d159c9ba48b4be" upstream="kirkstone-Yocto-v5.9.0"/>
