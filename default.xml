@@ -19,7 +19,7 @@
   <!-- use agl revisions/branches here -->
 
   <!-- AGL things. -->
-  <project name="AGL/meta-agl" path="meta-agl" />
+  <project name="dl9pf/meta-agl" path="meta-agl" remote="github" revision="master"/>
   <project name="AGL/meta-agl-demo" path="meta-agl-demo" />
   <project name="AGL/meta-agl-devel" path="meta-agl-devel" />
 
@@ -65,7 +65,7 @@
   <project name="meta-flutter/workspace-automation" path="external/workspace-automation" remote="github" revision="1548ef193f55cf476af6189449ee876ba7a7fdaf" upstream="main"/>
 
   <!-- BSPs -->
-  <project name="dl9pf/meta-sifive" path="bsp/meta-sifive" remote="github" revision="af7b81c7c4b50ed7a6a641ef79e5e9225235f45e" upstream="master"/>
+  <project name="dl9pf/meta-sifive" path="bsp/meta-sifive" remote="github" revision="master"/>
 
 
   
