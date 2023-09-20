@@ -86,4 +86,7 @@
   <project name="SanCloudLtd/meta-sancloud" path="bsp/meta-sancloud" remote="github" revision="e1a23019ce2ff3879986fa63071f1a2caa23697c" upstream="kirkstone"/>
   <project name="EmbeddedAndroid/meta-rtlwifi" path="bsp/meta-rtlwifi" remote="github" revision="032a394e7569d1254cd17a0358475b986e64a5a4" upstream="master"/>
 
+  <!-- Sifive BSP -->
+  <project name="dl9pf/meta-sifive" path="bsp/meta-sifive" remote="github" revision="80a979fd222623b56e44493cf92bd9e276a65453" upstream="master"/>
+
 </manifest>
