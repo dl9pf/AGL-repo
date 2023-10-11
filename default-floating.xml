@@ -64,6 +64,9 @@
   <!-- meta-flutter -->
   <project name="meta-flutter/meta-flutter" path="external/meta-flutter" remote="github" revision="kirkstone"/>
 
+  <!-- meta-tensorflow -->
+  <project name="meta-tensorflow" path="external/meta-tensorflow" remote="yocto" revision="kirkstone"/>
+
   <!-- BSPs -->
 
   <!-- Renesas Gen3 specific things -->
