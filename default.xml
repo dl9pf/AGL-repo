@@ -10,6 +10,7 @@
   <remote name="yocto" fetch="https://git.yoctoproject.org/git/" />
   <remote name="github" fetch="https://github.com/" />
   <remote name="openembedded" fetch="https://git.openembedded.org/" />
+  <remote name="codeqtio" fetch="https://code.qt.io/" />
 
   <!-- defaults -->
   <default remote="agl" sync-j="4" revision="master"/>
@@ -19,9 +20,9 @@
   <!-- use agl revisions/branches here -->
 
   <!-- AGL things. -->
-  <project name="AGL/meta-agl" path="meta-agl" />
-  <project name="AGL/meta-agl-demo" path="meta-agl-demo" />
-  <project name="AGL/meta-agl-devel" path="meta-agl-devel" />
+  <project name="dl9pf/meta-agl" path="meta-agl" remote="github" revision="qt6uprev" />
+  <project name="dl9pf/meta-agl-demo" path="meta-agl-demo" remote="github" revision="qt6uprev" />
+  <project name="dl9pf/meta-agl-devel" path="meta-agl-devel" remote="github" revision="qt6uprev" />
 
 
   <!-- ALL EXTERNAL REPOS BELOW USE A FIXED REVISION ! -->
@@ -40,7 +41,8 @@
   <project name="meta-virtualization" path="external/meta-virtualization" remote="yocto" revision="e60f59f3567b78286ea34337dbae468a5f18f1c6" upstream="kirkstone"/>
 
   <!-- Qt things -->
-  <project name="meta-qt5/meta-qt5" path="external/meta-qt5" remote="github" revision="bff5bd937f0776166e81a63f3dd39ede348ef758" upstream="kirkstone"/>
+  <!--<project name="meta-qt5/meta-qt5" path="external/meta-qt5" remote="github" revision="bff5bd937f0776166e81a63f3dd39ede348ef758" upstream="kirkstone"/>-->
+  <project name="yocto/meta-qt6" path="external/meta-qt6" remote="codeqtio" revision="dbd7212af8312757da6427f4fe2cf980c79c6245" upstream="lts-6.5"/>
 
   <!-- Security layer -->
   <project name="meta-security" path="external/meta-security" remote="yocto" revision="06c240c3c235fa06fe724e278d53463ac67cc26b" upstream="kirkstone"/>
