@@ -89,7 +89,7 @@
   <project name="meta-ti" path="bsp/meta-ti" remote="yocto" revision="wrynose"/>
 
   <!-- Raspberry Pi -->
-  <project name="meta-raspberrypi" path="bsp/meta-raspberrypi" remote="yocto" revision="master"/>
+  <project name="meta-raspberrypi" path="bsp/meta-raspberrypi" remote="yocto" revision="wrynose"/>
 
   <!-- meta-sifive -->
   <project name="sifive/meta-sifive" path="bsp/meta-sifive" remote="github" revision="wrynose"/>
