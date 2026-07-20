@@ -96,8 +96,8 @@
   <project name="meta-raspberrypi" path="bsp/meta-raspberrypi" remote="yocto" revision="6ca1f75017cc5d5acdb8bb05634c4bc01fa049fd" upstream="scarthgap"/>
   <project name="meta-lts-mixins" path="bsp/meta-lts-mixins_u-boot" remote="yocto" revision="66ceeebd047d7fdfc8668b300319a76da8ae257d" upstream="scarthgap/u-boot"/>
 
-  <!-- meta-sifive -->
-  <project name="sifive/meta-sifive" path="bsp/meta-sifive" remote="github" revision="4b50b9c21248432427e2491462180e7d5df61ae8" upstream="scarthgap"/>
+  <!-- meta-sifive pinned for p550 (includes unmatched) -->
+  <project name="sifive/meta-sifive" path="bsp/meta-sifive" remote="github" revision="0f1c65f36d7ba24f455a0e871d0c325df58d3923" upstream="2024.03-lts-hifive-premier-p550"/>
 
   <!-- meta-riscv for several risc boards -->
   <project name="riscv/meta-riscv" path="bsp/meta-riscv" remote="github" revision="76727db91108f53afc8a5b72651167c4446b5fcb" upstream="scarthgap"/>
