@@ -34,6 +34,7 @@
   <project name="openembedded-core" path="external/openembedded-core" remote="openembedded" revision="5d1aa5c806c061a2994f4decb59016610f093213" upstream="wrynose" />
   <project name="meta-yocto" path="external/meta-yocto" remote="yocto" revision="24c24cef5d1523fefe43a3e3d34667b37ae551f3" upstream="wrynose" />
   <project name="openembedded/meta-openembedded" path="external/meta-openembedded" remote="github" revision="d97b5602d7f64422c94b7311466cda7f6b1962d5" upstream="wrynose" />
+  <project name="meta-lts-mixins" path="external/meta-lts-mixins_rust" remote="yocto" revision="113341a44c841219a4062e59be6e617df199de14" upstream="wrynose/rust" />
 
 
   <!-- UPSTREAM COMPONENTS -->
