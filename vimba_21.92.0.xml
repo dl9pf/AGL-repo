@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <!-- remote servers to query -->
+  <remote name="agl"
+         fetch="https://gerrit.automotivelinux.org/gerrit/"
+         review="https://gerrit.automotivelinux.org/gerrit/"
+         pushurl="ssh://gerrit.automotivelinux.org:29418"
+  />
+  <remote name="yocto" fetch="https://git.yoctoproject.org/" />
+  <remote name="github" fetch="https://github.com/" />
+  <remote name="openembedded" fetch="https://git.openembedded.org/" />
+  <remote name="qtio" fetch="https://code.qt.io/" />
+
+  <!-- defaults -->
+  <default remote="agl" sync-j="4" revision="refs/tags/vimba/21.92.0"/>
+
+
+  <!-- CORE -->
+  <!-- use agl revisions/branches here -->
+
+  <!-- AGL things. -->
+  <project name="AGL/meta-agl" path="meta-agl" />
+  <project name="AGL/meta-agl-demo" path="meta-agl-demo" />
+  <project name="AGL/meta-agl-devel" path="meta-agl-devel" />
+
+
+  <!-- ALL EXTERNAL REPOS BELOW USE A FIXED REVISION ! -->
+
+  <!-- YOCTO & OE -->
+
+  <!-- Yocto/OpenEmbedded things. -->
+  <project name="bitbake" path="external/bitbake" remote="openembedded" revision="acfe02fa38b5da9e6a36c6cedcf91d4fcbefbfbd" upstream="2.18" />
+  <project name="openembedded-core" path="external/openembedded-core" remote="openembedded" revision="5d1aa5c806c061a2994f4decb59016610f093213" upstream="wrynose" />
+  <project name="meta-yocto" path="external/meta-yocto" remote="yocto" revision="24c24cef5d1523fefe43a3e3d34667b37ae551f3" upstream="wrynose" />
+  <project name="openembedded/meta-openembedded" path="external/meta-openembedded" remote="github" revision="d97b5602d7f64422c94b7311466cda7f6b1962d5" upstream="wrynose" />
+  <project name="meta-lts-mixins" path="external/meta-lts-mixins_rust" remote="yocto" revision="113341a44c841219a4062e59be6e617df199de14" upstream="wrynose/rust" />
+
+
+  <!-- UPSTREAM COMPONENTS -->
+
+  <!-- meta-virtualization -->
+  <project name="meta-virtualization" path="external/meta-virtualization" remote="yocto" revision="781735b97ae5013cacabbecd38e6da6b510cf3fb" upstream="wrynose"/>
+
+  <!-- Qt things -->
+  <project name="yocto/meta-qt6" path="external/meta-qt6" remote="qtio" revision="93272ba36a5d45a317acdbcfed425abbd8371ab6" upstream="6.12"/>
+
+  <!-- Security layer -->
+  <project name="meta-security" path="external/meta-security" remote="yocto" revision="c0d1d6200e7a84c39fb940cb1f22aad4b0b3d808" upstream="wrynose"/>
+
+  <!-- SELinux layer -->
+  <project name="meta-selinux" path="external/meta-selinux" remote="yocto" revision="1c3a699f363167571ab39fecb0fe6f56691a4e20" upstream="wrynose"/>
+
+  <!-- meta-spdxscanner - support for fossology -->
+  <project name="meta-spdxscanner" path="external/meta-spdxscanner" remote="yocto" revision="d7a4234322219afd9fd9ad66bcf3e16f34fd55f3" upstream="master"/>
+
+  <!-- meta-flutter -->
+  <project name="meta-flutter/meta-flutter" path="external/meta-flutter" remote="github" revision="450ea5b3eb5b84c58e71e956c17a23ce1f2335fd" upstream="master"/>
+  <project name="meta-flutter/workspace-automation" path="external/workspace-automation" remote="github" revision="eaddb9ba610abea9f2f52bd9c37115fd6206fc57" upstream="main"/>
+
+  <!-- meta-tensorflow -->
+  <project name="meta-tensorflow" path="external/meta-tensorflow" remote="yocto" revision="8df8899470a940cb20860a838500b22ac71b080d" upstream="wrynose"/>
+
+  <!-- meta-python-ai -->
+  <project name="zboszor/meta-python-ai" path="external/meta-python-ai" remote="github" revision="ee5fe6ff2b9e3437bfc1969794e5e6d8c90b6542" upstream="wrynose"/>
+
+  <!-- meta-ros -->
+  <project name="ros/meta-ros" path="external/meta-ros" remote="github" revision="dbb05e0b4430cd26dc2a9973cc4d70bb46d6b354" upstream="wrynose"/>
+
+
+  <!-- BSPs -->
+
+  <!-- meta-aws -->
+  <project name="aws4embeddedlinux/meta-aws" path="bsp/meta-aws" remote="github" revision="5e7cc95f7d55a0ba0ae6a7e6e43e6323811a140a" upstream="wrynose"/>
+
+  <!-- Renesas Gen3 specific things -->
+  <project name="renesas-rcar/meta-renesas" path="bsp/meta-renesas" remote="github" revision="ff4fac8123d758d4ba22047cf6f2d8cac0941766" upstream="wrynose-dev"/>
+  <project name="CogentEmbedded/meta-rcar" path="bsp/meta-rcar" remote="github" revision="fdc590b9f9853d129d2286876e22fdc91c1fcaa4" upstream="v5.9.4-scarthgap"/>
+  <project name="AGL/meta-agl-refhw" path="bsp/meta-agl-refhw" />
+
+  <!-- Renesas R-Car V4H Sparrow-Hawk -->
+  <project name="rcar-community/meta-sparrow-hawk" path="bsp/meta-sparrow-hawk" remote="github" revision="a45dbc05ca63f900014d7dc4aa9255e8868d655a" upstream="wrynose-dev"/>
+
+  <!-- consolidate on meta-freescale from git.yoctoproject.org -->
+  <project name="meta-freescale" path="bsp/meta-freescale" remote="yocto" revision="6b5b47d86538a92b1c513dbec974a9e0536d0101" upstream="wrynose"/>
+  <project name="Freescale/meta-freescale-3rdparty" path="bsp/meta-freescale-3rdparty" remote="github" revision="26d8b36a72acf1458a2520e4e9f4d654a4ba77e4" upstream="wrynose"/>
+
+  <!-- TI Vayu / Jacinto 6 / DRA7 -->
+  <project name="meta-arm" path="bsp/meta-arm" remote="yocto" revision="caa36c53f796beb25d9b9f58b1b7a492e9987e15" upstream="wrynose"/>
+  <project name="meta-ti" path="bsp/meta-ti" remote="yocto" revision="42b887f0b110eecb91744625bd4db09b1ea59770" upstream="wrynose"/>
+
+  <!-- Raspberry Pi -->
+  <project name="meta-raspberrypi" path="bsp/meta-raspberrypi" remote="yocto" revision="f62c67921474370829d24a4fa01ef88543f3906b" upstream="wrynose"/>
+
+  <!-- meta-sifive -->
+  <project name="sifive/meta-sifive" path="bsp/meta-sifive" remote="github" revision="f6128343f26d5e376a12da535a59f3be612eda05" upstream="wrynose"/>
+
+  <!-- meta-riscv for several risc boards -->
+  <project name="riscv/meta-riscv" path="bsp/meta-riscv" remote="github" revision="50941215124f126229ad3702bedabd87dec130c9" upstream="wrynose"/>
+
+  <!-- meta-tegra -->
+  <project name="OE4T/meta-tegra" path="bsp/meta-tegra" remote="github" revision="2583f3c9fd476f891c0b746e35a0b48363343a2c" upstream="wrynose"/>
+
+  <!-- rockchip layers -->
+  <project name="meta-rockchip" path="bsp/meta-rockchip" remote="yocto" revision="9d02575bfd9ca5e87c394f593f2bbdbdee914d4e" upstream="wrynose"/>
+
+</manifest>
