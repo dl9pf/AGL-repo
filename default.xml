@@ -20,9 +20,9 @@
   <!-- use agl revisions/branches here -->
 
   <!-- AGL things. -->
-  <project name="AGL/meta-agl" path="meta-agl" />
-  <project name="AGL/meta-agl-demo" path="meta-agl-demo" />
-  <project name="AGL/meta-agl-devel" path="meta-agl-devel" />
+  <project remote="github" name="dl9pf/meta-agl" path="meta-agl" />
+  <project remote="github" name="dl9pf/meta-agl-demo" path="meta-agl-demo" />
+  <project remote="github" name="dl9pf/meta-agl-devel" path="meta-agl-devel" />
 
 
   <!-- ALL EXTERNAL REPOS BELOW USE A FIXED REVISION ! -->
